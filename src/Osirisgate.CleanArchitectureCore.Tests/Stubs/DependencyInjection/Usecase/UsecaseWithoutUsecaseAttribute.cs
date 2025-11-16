@@ -1,0 +1,15 @@
+using UsecaseBase = Osirisgate.CleanArchitectureCore.Usecase.Usecase;
+
+namespace Osirisgate.CleanArchitectureCore.Tests.Stubs.DependencyInjection.Usecase;
+
+/// <remarks>
+/// Organization: Osirisgate
+/// Author: Ulrich Geraud A. | Software Engineer | developer@osirisgate.com
+/// </remarks>
+public sealed class UsecaseWithoutUsecaseAttribute : UsecaseBase
+{
+    public override Task ExecuteAsync(CancellationToken cancellationToken = default)
+    {
+        return Task.CompletedTask;
+    }
+}

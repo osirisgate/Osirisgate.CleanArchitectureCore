@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>Osirisgate.CleanArchitectureCore.Tests</PackageId>
+        <PackageDescription>Osirisgate Clean Architecture Core Tests is a .NET library designed to provide a solid foundation for implementing Clean Architecture. It offers a structured, testable, and maintainable way to handle application logic by separating requests, business rules, and responses.</PackageDescription>
+        <Version>1.0.0</Version>
+        <Authors>Ulrich Geraud A.</Authors>
+        <Company>Osirisgate</Company>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.0.4" />
+        <PackageReference Include="FluentValidation" Version="11.9.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+        <PackageReference Include="ReportGenerator" Version="5.2.0" />
+        <PackageReference Include="xunit" Version="2.9.3" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="Xunit" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Osirisgate.CleanArchitectureCore\Osirisgate.CleanArchitectureCore.csproj" />
+    </ItemGroup>
+
+</Project>
